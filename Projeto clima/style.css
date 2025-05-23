@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.busca {
+    display: flex;
+    width: 400px;
+    margin-bottom: 20px;
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 12px 20px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4ox 6px rgba(0, 0, 0, 0.1);
+}
+.busca button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff9800;
+    color: #FFF;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.busca button:hover {
+    background-color: #f57c00;
+}
+
+.resultado {
+    width: 300px;
+    display: none;
+    border: 1px dotted #FFF;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    width: 100%;
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.info .temp,
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+
+.tempTitulo,
+.ventoTitulo {
+    color: #ddd;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+.tempInfo,
+.ventoInfo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.tempInfo sup,
+.ventoInfo span {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.ventoArea {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    margin: 20px auto 0 auto;
+    position: relative;
+}
+.ventoPonto {
+    width: 20px;
+    height: 2px;
+    background-color: #ff9800;
+    transform-origin: left center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate((-50%, -50%) rotate(0deg));
+}
+
+.aviso {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+    text-align: center;
+}
